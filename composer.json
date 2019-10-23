@@ -1,7 +1,7 @@
 {
     "name": "wangiii/hasher",
     "description": "Md5 support in Laravel",
-    "type": "composer-plugin",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
