@@ -10,13 +10,14 @@ filter:
   excluded_paths:
     - 'tests/*'
 build:
-  environment:
-    php:
-      version: 7.2
-  tests:
-    override:
-      -
-        command: phpunit --coverage-clover=package-coverage-file
-        coverage:
-          file: package-coverage-file
-          format: clover
+  nodes:
+    package-tests:
+      environment:
+        php:
+          version: 7.2
+      tests:
+        override:
+          - command: phpunit --coverage-clover=package-coverage-file
+            coverage:
+              file: package-coverage-file
+              format: php-clover
