@@ -1,0 +1,19 @@
+{
+    "name": "wangiii/hasher",
+    "description": "Md5 support in Laravel",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JasonVV",
+            "email": "jasonwangiii@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wangiii\\Hasher\\": "src/"
+        }
+    }
+}
